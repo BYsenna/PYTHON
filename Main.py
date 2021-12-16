@@ -37,11 +37,10 @@ def func_menu_Jogo():
 
 def func_titulo():
     print('(((      Bem vindo ao Gamer da Sorte     )))')
-    print('     Você está preparado para iniciarmos?...')
-    texto = ('Pressione ENTER....')
+    texto = ('Pressione ENTER........................:')
     func_Escrever_Texto(texto)
     input()
-    texto = "Entendi.. então iremos começar...\n"
+    texto = "Iremos começar...\n"
     func_Escrever_Texto(texto)
 
 

@@ -87,6 +87,5 @@ def func_mentalista(x, numero):
                     func_mentalista(x, numero)
 
 func_titulo()
-'''input('\n....................................')'''
 func_menu_principal()
 func_menu_Jogo()

@@ -51,7 +51,7 @@ def func_str_number(opcao):
 
 def checar_palpite_correto(opcao, número_aleatório):
     if opcao > número_aleatório:
-        ('O numero {} e Maior que o numero pensado..'.format(opcao))
+        print('O numero {} e Maior que o numero pensado..'.format(opcao))
     elif opcao < número_aleatório:
         print('O numero {} e Menor que o numero pensado..'.format(opcao))
     else:
@@ -66,18 +66,16 @@ def func_mentalista():
     while True:
         opcao = input("Digite um número entre 1 e 100: ")
         func_exit(opcao)
-
         opcao = func_str_number(opcao)
         if opcao is None:
             print("Erro: Você deve digitar um número! Tente novamente.\n")
             continue
 
-        if 1 <= opcao <= 100:
+        if 1 <= opcao <= 101:
            opcao_correta = checar_palpite_correto(opcao, número_aleatório)
         else:
             print("Erro: O número deve estar entre 1 e 100! Tente novamente.\n")
             continue
-
         if opcao_correta:
             func_new_game()
             func_new_info()
